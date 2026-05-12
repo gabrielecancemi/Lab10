@@ -27,8 +27,8 @@ class View(ft.UserControl):
         row1 = ft.Row([self._txtAnno, self._btnCalcola], alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row1)
 
-        self._ddStato = ft.Dropdown(label="Stato")
-        self._btnCerca = ft.ElevatedButton(text="Stati raggiungibili", on_click=self._controller.handleCerca)
+        self._ddStato = ft.Dropdown(label="Stato", disabled=True)
+        self._btnCerca = ft.ElevatedButton(text="Stati raggiungibili", on_click=self._controller.handleCerca, disabled=True)
         row2 = ft.Row([self._ddStato, self._btnCerca], alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row2)
         # List View where the reply is printed

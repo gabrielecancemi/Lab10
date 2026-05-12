@@ -48,9 +48,10 @@ class Model:
         return tree.nodes()
 
     def ricorsione(self, daVisitare, visitati):
-        if daVisitare:
-            print(len(visitati))
-            n = daVisitare[-1]
+        #if daVisitare:
+            #print(len(visitati))
+        for n in daVisitare:
+        #n = daVisitare[-1]
             daVisitare.remove(n)
             visitati.append(n)
             vicini = self._g.neighbors(n)

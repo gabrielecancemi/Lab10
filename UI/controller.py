@@ -34,6 +34,8 @@ class Controller:
             self._view._txt_result.controls.append(ft.Text(f"{n[0]} -- GRADO: {n[1]}"))
 
         self.fillDD(nodi)
+        self._view._ddStato.disabled = False
+        self._view._btnCerca.disabled = False
 
         self._view.update_page()
 
